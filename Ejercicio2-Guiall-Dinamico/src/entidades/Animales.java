@@ -5,7 +5,7 @@ import java.util.Scanner;
 public abstract class Animales {
 
     protected String animal;
-    protected boolean peligro = false;
+    protected boolean peligro = false; //inicializar el booleano en false
     protected int edad;
     protected char aux;
 
@@ -30,7 +30,7 @@ public abstract class Animales {
         aux = input.next().charAt(0);
 
         if (aux == 'c') {
-            peligro = true;
+            peligro = true; //cambiar el valor para medir el peligro
             System.out.println("El animal es peligroso -" + peligro); //pueden quitar de aca la variable ya que es solo de prueba
         } else if (aux == 'h') {
             System.out.println("El animal no es peligroso -" + peligro);
